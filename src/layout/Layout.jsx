@@ -39,8 +39,8 @@ function Layout() {
                 <input type="text" />
             </div>
             <div className="right">
-                <img src="/public/img/Group 2.svg" alt="" />
-                <img className="message" src="/public/img/Group 3.svg" alt="" />
+                <img src="/img/Group 2.svg" alt="" />
+                <img className="message" src="/img/Group 3.svg" alt="" />
             </div>
         </header>
         <Outlet/>

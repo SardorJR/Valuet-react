@@ -226,60 +226,21 @@ function Overview() {
               </div>
               <div className="card-item3">
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
                   </div>
                 </div>
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
                   </div>
                 </div>
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
-                  <div className="dannie">
-                    <h5>$1 200= 0,074 BTC</h5>
-                    <p>1 BTC = $6 542, 35</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <span>Bitcoin</span>
-            <div className="flex">
-              <div className="card-item">
-                <div className="circle">
-                  <div className="circle2">
-                    <img src="/img/Vector (18).png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="card-item2">
-                <h2>600 BTC</h2>
-                <h3>$30,000,000</h3>
-              </div>
-              <div className="card-item3">
-                <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
-                  <div className="dannie">
-                    <h5>$1 200= 0,074 BTC</h5>
-                    <p>1 BTC = $6 542, 35</p>
-                  </div>
-                </div>
-                <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
-                  <div className="dannie">
-                    <h5>$1 200= 0,074 BTC</h5>
-                    <p>1 BTC = $6 542, 35</p>
-                  </div>
-                </div>
-                <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
@@ -304,21 +265,21 @@ function Overview() {
               </div>
               <div className="card-item3">
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
                   </div>
                 </div>
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
                   </div>
                 </div>
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
@@ -343,21 +304,60 @@ function Overview() {
               </div>
               <div className="card-item3">
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
                   </div>
                 </div>
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
                   </div>
                 </div>
                 <div className="elem">
-                  <img className="finans" src="/public/img/Frame.png" alt="" />
+                  <img className="finans" src="/img/Frame.png" alt="" />
+                  <div className="dannie">
+                    <h5>$1 200= 0,074 BTC</h5>
+                    <p>1 BTC = $6 542, 35</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <span>Bitcoin</span>
+            <div className="flex">
+              <div className="card-item">
+                <div className="circle">
+                  <div className="circle2">
+                    <img src="/img/Vector (18).png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="card-item2">
+                <h2>600 BTC</h2>
+                <h3>$30,000,000</h3>
+              </div>
+              <div className="card-item3">
+                <div className="elem">
+                  <img className="finans" src="/img/Frame.png" alt="" />
+                  <div className="dannie">
+                    <h5>$1 200= 0,074 BTC</h5>
+                    <p>1 BTC = $6 542, 35</p>
+                  </div>
+                </div>
+                <div className="elem">
+                  <img className="finans" src="/img/Frame.png" alt="" />
+                  <div className="dannie">
+                    <h5>$1 200= 0,074 BTC</h5>
+                    <p>1 BTC = $6 542, 35</p>
+                  </div>
+                </div>
+                <div className="elem">
+                  <img className="finans" src="/img/Frame.png" alt="" />
                   <div className="dannie">
                     <h5>$1 200= 0,074 BTC</h5>
                     <p>1 BTC = $6 542, 35</p>
