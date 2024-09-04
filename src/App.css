@@ -829,7 +829,7 @@ max-width: 100% !important;
   display: flex;
   flex-direction: column;
   padding: 10px 30px;
-
+  height: 100%;
   .text-wallets {
     display: flex;
     flex-direction: row;
@@ -902,6 +902,7 @@ max-width: 100% !important;
   }
   .wallets {
     width: 100%;
+    height: 148px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -1507,22 +1508,27 @@ select {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-block: 25px 0;
+  padding-block: 0px 0;
   gap: 2%;
   .charts4 {
+    margin-block: 20px 0;
     width: 49%;
-    height: 400px;
+    height: 380px;
   }
-  .reacent-transactions{
+  .reacent-transactions {
     width: 49%;
-    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0f0b38 93.37%);
+    background: linear-gradient(
+      180deg,
+      rgba(27, 18, 78, 0.2) 0%,
+      #0f0b38 93.37%
+    );
     border-radius: 10px;
     padding: 15px 30px;
-    .recent{
+    .recent {
       width: 100%;
       padding-block: 0 15px;
       border-bottom: 3px solid rgba(255, 255, 255, 0.1);
-      h2{
+      h2 {
         font-size: 20px;
         color: white;
         font-weight: 600;
@@ -1546,10 +1552,7 @@ select {
   font-weight: 600;
 }
 
-
-
 .transaction-details {
-
   font-size: 14px;
   line-height: 1.2;
 }
@@ -1580,7 +1583,7 @@ select {
 }
 
 .transaction-amount.sent {
-  color: #f53a3a; 
+  color: #f53a3a;
 }
 
 .transaction-item:last-child {

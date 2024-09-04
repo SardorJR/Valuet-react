@@ -12,12 +12,11 @@ export const generateDifferentGradient = () => {
     const color1 = getRandomColor();
     const color2 = getRandomColor();
   
-    return ` linear-gradient(237.07deg, ${color1} -8.06%, ${color2} 96.63%)`; // Изменённое направление градиента
+    return ` linear-gradient(237.07deg, ${color1} -8.06%, ${color2} 96.63%)`; 
 
 
   };
-  
-  // Используйте эту функцию в вашем компоненте
+
   function Wallets_component({item}) {
     const backgroundColor = generateDifferentGradient();
   

@@ -1,89 +1,147 @@
 import { useEffect } from "react";
-import { Link, Navigate, Outlet, useLocation, useNavigate } from "react-router-dom";
+import {
+  Link,
+  Navigate,
+  Outlet,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 
 function Layout() {
-    const location = useLocation()
-    const navigate = useNavigate()
-    useEffect(() => {
-        const token = localStorage.getItem('userEmail');
-        if (!token) {
-          navigate('/signup')
-        }
-      }, [navigate])
-    return ( 
-        <>
-        {/* src={location.pathname === '/' ? '/icons/home-active.svg' : '/icons/home.svg'} */}
-          <div className="leftsideBar">
-            <h3>valuet</h3>
-            <nav>
-            <Link to="/overview">
-        <div className={`item ${location.pathname === '/overview' ? 'active' : ''}`}>
-          <img 
-            src={location.pathname === '/overview' ? '/img/Vector.svg' : '/img/Vector (20).png'}
-            alt="Overview"
-          />
-          <span style={{ color: location.pathname === '/overview' ? 'white' : '#616A8B' }}>
-            Overview
-          </span>
-        </div>
-      </Link>
-      <Link to="/wallets">
-        <div className={`item ${location.pathname === '/wallets' ? 'active' : ''}`}>
-          <img 
-            src={location.pathname === '/wallets' ? '/img/Vector (21).png' : '/img/Group.svg'}
-            alt="Wallets"
-          />
-          <span style={{ color: location.pathname === '/wallets' ? 'white' : '#616A8B' }}>
-            Wallets
-          </span>
-        </div>
-      </Link>
-      <Link to="/transactions">
-        <div className={`item ${location.pathname === '/transactions' ? 'active' : ''}`}>
-          <img 
-            src={location.pathname === '/transactions' ? '/img/Group (9).png' : '/img/Group (1).svg'}
-            alt="Transactions"
-          />
-          <span style={{ color: location.pathname === '/transactions' ? 'white' : '#616A8B' }}>
-            Transactions
-          </span>
-        </div>
-      </Link>
-      <Link to="/exchange">
-        <div className={`item ${location.pathname === '/exchange' ? 'active' : ''}`}>
-          <img 
-            src={location.pathname === '/exchange' ? '/img/Group 6 (2).png' : '/img/Group 6.svg'}
-            alt="Exchange"
-          />
-          <span style={{ color: location.pathname === '/exchange' ? 'white' : '#616A8B' }}>
-            Exchange
-          </span>
-        </div>
-      </Link>
-            </nav>
-            <div className="bottom">
-                <div className="elem">
-                   <button></button>
-                    <a href="#">Mike Jakson</a>
-                </div>
-                <div className="elem">
-                    <img src="/img/Group (2).svg" alt="" />
-                    <a className="logout" href="#">Log out</a>
-                </div>
+  const location = useLocation();
+  const navigate = useNavigate();
+  useEffect(() => {
+    const token = localStorage.getItem("userEmail");
+    if (!token) {
+      navigate("/signup");
+    }
+  }, [navigate]);
+  return (
+    <>
+      <div className="leftsideBar">
+        <h3>valuet</h3>
+        <nav>
+          <Link to="/overview">
+            <div
+              className={`item ${
+                location.pathname === "/overview" ? "active" : ""
+              }`}
+            >
+              <img
+                src={
+                  location.pathname === "/overview"
+                    ? "/img/Vector.svg"
+                    : "/img/Vector (20).png"
+                }
+                alt="Overview"
+              />
+              <span
+                style={{
+                  color:
+                    location.pathname === "/overview" ? "white" : "#616A8B",
+                }}
+              >
+                Overview
+              </span>
             </div>
+          </Link>
+          <Link to="/wallets">
+            <div
+              className={`item ${
+                location.pathname === "/wallets" ? "active" : ""
+              }`}
+            >
+              <img
+                src={
+                  location.pathname === "/wallets"
+                    ? "/img/Vector (21).png"
+                    : "/img/Group.svg"
+                }
+                alt="Wallets"
+              />
+              <span
+                style={{
+                  color: location.pathname === "/wallets" ? "white" : "#616A8B",
+                }}
+              >
+                Wallets
+              </span>
+            </div>
+          </Link>
+          <Link to="/transactions">
+            <div
+              className={`item ${
+                location.pathname === "/transactions" ? "active" : ""
+              }`}
+            >
+              <img
+                src={
+                  location.pathname === "/transactions"
+                    ? "/img/Group (9).png"
+                    : "/img/Group (1).svg"
+                }
+                alt="Transactions"
+              />
+              <span
+                style={{
+                  color:
+                    location.pathname === "/transactions" ? "white" : "#616A8B",
+                }}
+              >
+                Transactions
+              </span>
+            </div>
+          </Link>
+          <Link to="/exchange">
+            <div
+              className={`item ${
+                location.pathname === "/exchange" ? "active" : ""
+              }`}
+            >
+              <img
+                src={
+                  location.pathname === "/exchange"
+                    ? "/img/Group 6 (2).png"
+                    : "/img/Group 6.svg"
+                }
+                alt="Exchange"
+              />
+              <span
+                style={{
+                  color:
+                    location.pathname === "/exchange" ? "white" : "#616A8B",
+                }}
+              >
+                Exchange
+              </span>
+            </div>
+          </Link>
+        </nav>
+        <div className="bottom">
+          <div className="elem">
+            <button></button>
+            <a href="#">Mike Jakson</a>
+          </div>
+          <div className="elem">
+            <img src="/img/Group (2).svg" alt="" />
+            <a className="logout" href="#">
+              Log out
+            </a>
+          </div>
         </div>
-        <header>
-            <div className="left">
-                <input type="text" />
-            </div>
-            <div className="right">
-                <img src="/img/Group 2.svg" alt="" />
-                <img className="message" src="/img/Group 3.svg" alt="" />
-            </div>
-        </header>
-        <Outlet/>
-        </>
-     );
+      </div>
+      <header>
+        <div className="left">
+          <input type="text" />
+        </div>
+        <div className="right">
+          <img src="/img/Group 2.svg" alt="" />
+          <img className="message" src="/img/Group 3.svg" alt="" />
+        </div>
+      </header>
+      <Outlet />
+    </>
+  );
 }
 
 export default Layout;
