@@ -12,7 +12,12 @@ function Signin() {
       const user = response.data.find(user => user.password === data.password)
   
       if (user) {
-        alert('Success');
+        const token = ''
+        localStorage.setItem('authToken', token);
+        localStorage.setItem('userName', user.name);
+        localStorage.setItem('userEmail', user.email);
+        
+        alert('Success')
         location.assign('/Overview')
       } else {
         alert('Unsuccess');

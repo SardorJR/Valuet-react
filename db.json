@@ -1,18 +1,38 @@
 {
   "users": [
     {
-      "id": "161f",
-      "name": "sardor",
-      "surname": "Sardorov",
-      "email": "sardorjn@gmail.com",
-      "password": "sssss555"
-    },
-    {
-      "id": "583c",
+      "id": "2ea8",
       "name": "sardor",
       "surname": "Sardorov",
       "email": "sardorjn@gmail.com",
       "password": "Sardor454"
+    }
+  ],
+  "transactions": [],
+  "wallets": [
+    {
+      "id": "ca45",
+      "cardNumber": "119192899213",
+      "expiryDate": "12/34",
+      "currency": "USD"
+    },
+    {
+      "id": "bdbf",
+      "cardNumber": "kjdio390qw",
+      "expiryDate": "2119w",
+      "currency": "EUR"
+    },
+    {
+      "id": "aa42",
+      "cardNumber": "skajdkjsak",
+      "expiryDate": "2717",
+      "currency": "EUR"
+    },
+    {
+      "id": "f887",
+      "cardNumber": "119192899213",
+      "expiryDate": "12/34",
+      "currency": "USD"
     }
   ]
 }
