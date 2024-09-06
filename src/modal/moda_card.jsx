@@ -3,12 +3,16 @@ import { useForm } from "react-hook-form";
 
 function ModalCard({ isOpen, onClose }) {
   const { register, handleSubmit, reset } = useForm();
-
+  let UserID=localStorage.getItem('id')
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:8080/wallets", data);
-      reset()
-      onClose()
+      const payload = {
+        ...data,
+        userId: UserID 
+      }
+      await axios.post("http://localhost:8080/wallets", payload)
+      reset();
+      onClose();
     } catch (error) {
       console.error("Ошибка при отправке данных:", error);
     }
@@ -39,7 +43,13 @@ function ModalCard({ isOpen, onClose }) {
             placeholder="ММ/ГГ"
             {...register("expiryDate", { required: true })}
           />
-
+          <label htmlFor="Amount"> Amount</label>
+          <input
+            type="number"
+            id="cardAmount"
+            placeholder="Amount"
+            {...register("cardAmount", { required: true })}
+          />
           <label htmlFor="currency">Валюта:</label>
           <select id="currency" {...register("currency", { required: true })}>
             <option value="">Выберите валюту</option>

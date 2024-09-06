@@ -38,8 +38,8 @@ export const generateDifferentGradient = () => {
             </div>
             <div className="box">
               <div className="item-box">
-                <span>5 248 USD</span>
-                <p>+2,59%</p>
+                <span>{item.cardAmount} {item.currency}</span>
+                <p>{item.expiryDate}</p>
               </div>
               <div className="item-box">
                 <div style={{ background: generateDifferentGradient() }}  className="out">

@@ -35,13 +35,13 @@ export const getRandomColor = () => {
 };
 
 // Компонент Doughnut Chart
-export const DoughnutChart = () => {
+export const DoughnutChart = ({ cardAmount, labels }) => {
   const data = {
-    labels: ["Red", "Blue", "Yellow"],
+    labels: labels,
     datasets: [
       {
         label: "My First Dataset",
-        data: [300, 100, 50],
+        data: cardAmount,
         backgroundColor: ["#018FFF", "#FAD679", "white"],
         borderColor: "transparent",
         borderWidth: 2,
@@ -51,6 +51,10 @@ export const DoughnutChart = () => {
 
   const options = {
     responsive: true,
+    animation: {
+      duration: 1500, // Время анимации в миллисекундах
+      easing: 'easeOutBounce', // Тип анимации
+    },
     plugins: {
       legend: { display: false },
       tooltip: { enabled: false },
@@ -63,13 +67,13 @@ export const DoughnutChart = () => {
 };
 
 // Компонент Line Chart 1
-export const LineChart1 = () => {
+export const LineChart1 = ({totalTransaction}) => {
   const data = {
     labels: ["2", "4", "6", "8", "10", "12", "14", "16"],
     datasets: [
       {
         label: "Spending",
-        data: [2000, 2600, 2500, 3200, 3100, 4200, 4400, 5743.35],
+        data: totalTransaction,
         fill: true,
         backgroundColor: (context) => {
           const chart = context.chart;
@@ -107,6 +111,10 @@ export const LineChart1 = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    animation: {
+      duration: 1500, // Время анимации в миллисекундах
+      easing: 'easeInOutQuad', // Тип анимации
+    },
     scales: {
       x: {
         grid: { display: false },
@@ -131,15 +139,13 @@ export const LineChart1 = () => {
 };
 
 // Компонент Line Chart 2
-export const LineChart2 = () => {
-  const data = {
-    labels: [
-      "NOV 15", "NOV 16", "NOV 17", "NOV 18", "NOV 19", "NOV 20", "NOV 21", "NOV 22",
-    ],
+export const LineChart2 = ({ labels, data }) => {
+  const chartData = {
+    labels: labels,
     datasets: [
       {
         label: "Market",
-        data: [2000, 4000, 6000, 8000, 6000, 9000, 7000, 10000],
+        data: data,
         fill: false,
         borderColor: "rgba(0, 150, 255, 1)",
         borderWidth: 2,
@@ -151,6 +157,10 @@ export const LineChart2 = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    animation: {
+      duration: 1500,
+      easing: 'easeInOutQuad',
+    },
     scales: {
       x: {
         beginAtZero: true,
@@ -185,9 +195,8 @@ export const LineChart2 = () => {
     },
   };
 
-  return <Line data={data} options={options} />;
-};
-
+  return <Line data={chartData} options={options} />;
+}
 // Компонент Line Card
 export function LineCard() {
   const borderColor = getRandomColor(); // Генерация случайного цвета
@@ -209,6 +218,10 @@ export function LineCard() {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    animation: {
+      duration: 1500, // Время анимации в миллисекундах
+      easing: 'easeInOutQuad', // Тип анимации
+    },
     plugins: {
       legend: {
         display: false, // Скрыть легенду

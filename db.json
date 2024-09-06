@@ -20,33 +20,101 @@
       "surname": "Sardorov",
       "email": "sardorjn@gmail.com",
       "password": "Sardor555"
+    },
+    {
+      "id": "9d34",
+      "name": "Sardor",
+      "surname": "Sardorov",
+      "email": "sardorjn@gmail.com",
+      "password": "Sardor555"
+    },
+    {
+      "id": "3052",
+      "name": "Sardor",
+      "surname": "Sardorov",
+      "email": "sardorjn2006@gmail.com",
+      "password": "Sardor545"
+    },
+    {
+      "id": "3ca7",
+      "name": "Sardor",
+      "surname": "Sardorov",
+      "email": "sardorjn@gmail.com",
+      "password": "Sardor454"
+    },
+    {
+      "id": "8f6a",
+      "name": "Sardor",
+      "surname": "Sardorov",
+      "email": "sardorjn@gmail.com",
+      "password": "Sardor555"
+    },
+    {
+      "id": "4512",
+      "name": "Sardor",
+      "surname": "Sardorov",
+      "email": "sardorjn@gmail.com",
+      "password": "Sardor111"
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "id": "mQQHNPkBiOykHHag40k9GJcCLIJkviQA",
+      "date": "2024-09-27",
+      "currency": "EUR",
+      "price": "3000",
+      "time": "02:15",
+      "userId": "4512"
+    },
+    {
+      "id": "iS9v0zkhg2WHP6ecAeci7TDK0Pq2c90N",
+      "date": "2024-09-13",
+      "currency": "EUR",
+      "price": "20000",
+      "time": "14:43",
+      "userId": "2ea8"
+    }
+  ],
   "wallets": [
     {
-      "id": "ca45",
-      "cardNumber": "119192899213",
-      "expiryDate": "12/34",
-      "currency": "USD"
+      "id": "134e",
+      "cardNumber": "1000",
+      "expiryDate": "12/44",
+      "cardAmount": "1000",
+      "currency": "EUR",
+      "userId": "2ea8"
     },
     {
-      "id": "bdbf",
-      "cardNumber": "kjdio390qw",
-      "expiryDate": "2119w",
-      "currency": "EUR"
+      "id": "3dcf",
+      "cardNumber": "100",
+      "expiryDate": "12/44",
+      "cardAmount": "22",
+      "currency": "EUR",
+      "userId": "2ea8"
     },
     {
-      "id": "aa42",
-      "cardNumber": "skajdkjsak",
-      "expiryDate": "2717",
-      "currency": "EUR"
+      "id": "ee87",
+      "cardNumber": "3923023",
+      "expiryDate": "12/22",
+      "cardAmount": "100000000",
+      "currency": "USD",
+      "userId": "2ea8"
     },
     {
-      "id": "f887",
-      "cardNumber": "119192899213",
-      "expiryDate": "12/34",
-      "currency": "USD"
+      "id": "f317",
+      "cardNumber": "100",
+      "expiryDate": "12.44",
+      "cardAmount": "77",
+      "currency": "JPY",
+      "userId": "2ea8"
+    },
+    {
+      "id": "0402",
+      "cardNumber": "2222222",
+      "expiryDate": "12/21",
+      "cardAmount": "2202002",
+      "currency": "EUR",
+      "userId": "2ea8"
     }
   ]
 }

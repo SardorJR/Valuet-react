@@ -16,20 +16,25 @@ function Layout() {
       navigate("/signup");
     }
   }, [navigate]);
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate('/signin');
+  }
+  let name=localStorage.getItem('userName')
   return (
     <>
       <div className="leftsideBar">
         <h3>valuet</h3>
         <nav>
-          <Link to="/overview">
+          <Link to="/Overview">
             <div
               className={`item ${
-                location.pathname === "/overview" ? "active" : ""
+                location.pathname === "/Overview" ? "active" : ""
               }`}
             >
               <img
                 src={
-                  location.pathname === "/overview"
+                  location.pathname === "/Overview"
                     ? "/img/Vector.svg"
                     : "/img/Vector (20).png"
                 }
@@ -38,7 +43,7 @@ function Layout() {
               <span
                 style={{
                   color:
-                    location.pathname === "/overview" ? "white" : "#616A8B",
+                    location.pathname === "/Overview" ? "white" : "#616A8B",
                 }}
               >
                 Overview
@@ -120,14 +125,16 @@ function Layout() {
         <div className="bottom">
           <div className="elem">
             <button></button>
-            <a href="#">Mike Jakson</a>
+            <a href="#">{name}</a>
           </div>
-          <div className="elem">
+         
+          <div className="elem" onClick={handleLogout}>
             <img src="/img/Group (2).svg" alt="" />
             <a className="logout" href="#">
               Log out
             </a>
           </div>
+         
         </div>
       </div>
       <header>

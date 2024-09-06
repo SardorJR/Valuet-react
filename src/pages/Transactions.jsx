@@ -7,9 +7,13 @@ function Transictions() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [transactions, setTransactions] = useState([]);
 
+  const userId = localStorage.getItem("id");
+
   const handleAddTransaction = (transaction) => {
+    const transactionWithUserId = { ...transaction, userId };
+
     axios
-      .post("http://localhost:8080/transactions", transaction)
+      .post("http://localhost:8080/transactions", transactionWithUserId)
       .then((response) => {
         setTransactions((prevTransactions) => [
           ...prevTransactions,
@@ -20,16 +24,18 @@ function Transictions() {
         console.error("Error adding transaction:", error);
       });
   };
+
   useEffect(() => {
     axios
-      .get("http://localhost:8080/transactions")
+      .get(`http://localhost:8080/transactions?userId=${userId}`)
       .then((response) => {
         setTransactions(response.data);
       })
       .catch((error) => {
         console.error("Error fetching transactions:", error);
       });
-  }, []);
+  }, [userId]);
+
   const handleDeleteTransaction = (id) => {
     axios
       .delete(`http://localhost:8080/transactions/${id}`)
@@ -41,10 +47,10 @@ function Transictions() {
       .catch((error) => {
         console.error("Error deleting transaction:", error);
       });
-  };
+  }
   const toggleModal = () => {
     setModalOpen(!isModalOpen);
-  };
+  }
 
   return (
     <>

@@ -19,7 +19,7 @@ function TransactionsComponent({ item,onDelete  }) {
             </div>
           </div>
           <div className="item">
-            <span>{item.price} BTC</span>
+            <span>{item.price} {item.currency}</span>
             <button className="wait" onClick={handleDelete}>delete</button>
           </div>
         </div>

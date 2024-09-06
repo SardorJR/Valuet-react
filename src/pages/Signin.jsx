@@ -16,6 +16,7 @@ function Signin() {
         localStorage.setItem('authToken', token);
         localStorage.setItem('userName', user.name);
         localStorage.setItem('userEmail', user.email);
+        localStorage.setItem('id',user.id)
         
         alert('Success')
         location.assign('/Overview')
