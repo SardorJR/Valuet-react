@@ -188,7 +188,7 @@ function Overview() {
               className="chart2"
               style={{ width: "230px", height: "200px", marginLeft: "-8px" }}
             >
-             <LineChart1 totalTransaction={totalTransactions} />
+             <LineChart1 totalTransaction={Array(8).fill(totalTransactions)} />
             </div>
           </div>
           <div className="card_box">

@@ -134,7 +134,7 @@ function Wallets() {
       </div>
       <ModalCard isOpen={isModalOpen} onClose={closeModal} />
     </>
-  );
+  )
 }
 
 export default Wallets;
